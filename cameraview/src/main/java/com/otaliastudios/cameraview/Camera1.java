@@ -153,6 +153,7 @@ class Camera1 extends CameraController implements Camera.PreviewCallback, Camera
 
         LOG.i(log, "Starting preview with startPreview().");
         try {
+            mCamera.setDisplayOrientation(0);
             mCamera.startPreview();
         } catch (Exception e) {
             LOG.e(log, "Failed to start preview.", e);

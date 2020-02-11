@@ -431,7 +431,8 @@ abstract class CameraController implements
         int offset = computeSensorToViewOffset();
         LOG.i("shouldFlipSizes:", "displayOffset=", mDisplayOffset, "sensorOffset=", mSensorOffset);
         LOG.i("shouldFlipSizes:", "sensorToDisplay=", offset);
-        return offset % 180 != 0;
+        // return offset % 180 != 0;
+        return false;
     }
 
     /**
